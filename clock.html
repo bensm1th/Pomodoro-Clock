@@ -1,0 +1,95 @@
+<!- Random Quote Machine HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="clock.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="timers">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <table class="table table-responsive" id="table1">
+                        <thead>
+                            <tr>
+                                <th class="length">BREAK LENGTH</th>
+                                <th class="length">SESSION LENGTH</th>
+                            </tr>
+                        </thead>
+                        <tbody class="noselect">
+                            <td>
+                                <span class="signs" id="minusBreak">  &#45; </span>
+                                <span id="breakTime">1</span>
+                                <span class="signs" id="plusBreak">&#43;</span>
+                            </td>
+
+                            <td>
+                                <span class="signs" id="minusSession">  &#45; </span>
+                                <span id="sessionTime">1</span>
+                                <span class="signs" id="plusSession">  &#43; </span>
+                            </td>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <table class="table table-responsive" id="table2">
+                    <thead>
+                        <tr>
+                            <th id="startTimer">START TIMER</th>
+                        </tr>
+                        <tr>
+                            <th class="pause">PAUSE TIMER</th>
+                        </tr>
+                        <tr>
+                            <th class="stop">STOP TIMER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="centerTimer">
+                            <div id="clockdiv" >
+                                <span id="session">SESSION</span>
+                                <span class="minutes">00</span><span>:</span>
+                                <span class="seconds">00</span>
+                            </div>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="clock.js"></script>
+</body>
+
+</html>
